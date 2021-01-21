@@ -8,4 +8,8 @@ describe('<Footer />', () => {
   test('footer successfully mounted', () => {
     expect(footer.length).toEqual(1);
   });
+
+  test('Render Title', () => {
+    expect(footer.find('.Footer-title').text()).toEqual('Platzi Store');
+  });
 });
